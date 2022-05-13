@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+    <script src="api-client.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>ToDo list</title>
+</head>
+<body>
+<div class="wrapper">
+
+    <h1>ToDo List</h1>
+
+    <nav>
+        <input type="text" id="newtask">
+        <button class="addtolist" onclick="addToList()">Add</button>
+    </nav>
+
+    <div class="listbox">
+        <ul class="list"></ul>
+
+    <div class="delbox">
+        <button class="btn btn-default btn-sm" onclick="delFromList()">
+            <span class="glyphicon glyphicon-trash"></span>
+        </button>
+    </div>
+    </div>
+</div>  
+</body>
+</html>
